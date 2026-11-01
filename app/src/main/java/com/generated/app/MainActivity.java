@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
@@ -276,7 +277,7 @@ public class MainActivity extends Activity {
             tvTitle.setText(note.getTitle());
             tvTitle.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
             tvTitle.setTextColor(0xFF0F172A);
-            tvTitle.setTextStyle(android.graphics.Typeface.BOLD);
+            tvTitle.setTypeface(null, Typeface.BOLD);
             tvTitle.setMaxLines(2);
             card.addView(tvTitle);
         }
@@ -403,7 +404,7 @@ public class MainActivity extends Activity {
         tvMode.setText("מבנה מסך הבית:");
         tvMode.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         tvMode.setTextColor(0xFF0F172A);
-        tvMode.setTextStyle(android.graphics.Typeface.BOLD);
+        tvMode.setTypeface(null, Typeface.BOLD);
         layout.addView(tvMode);
 
         final RadioGroup rgMode = new RadioGroup(this);
@@ -435,7 +436,7 @@ public class MainActivity extends Activity {
         tvLang.setText("שפת תמלול דיבור מקומי:");
         tvLang.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         tvLang.setTextColor(0xFF0F172A);
-        tvLang.setTextStyle(android.graphics.Typeface.BOLD);
+        tvLang.setTypeface(null, Typeface.BOLD);
         layout.addView(tvLang);
 
         final RadioGroup rgLang = new RadioGroup(this);
@@ -467,7 +468,7 @@ public class MainActivity extends Activity {
         tvTransMode.setText("אופן תמלול קולי:");
         tvTransMode.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
         tvTransMode.setTextColor(0xFF0F172A);
-        tvTransMode.setTextStyle(android.graphics.Typeface.BOLD);
+        tvTransMode.setTypeface(null, Typeface.BOLD);
         layout.addView(tvTransMode);
 
         final RadioGroup rgTransMode = new RadioGroup(this);

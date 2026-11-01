@@ -14,6 +14,7 @@ import android.media.MediaRecorder;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
@@ -548,7 +549,6 @@ public class NoteEditorActivity extends Activity {
 
             @Override
             public void onError(int error) {
-                // If offline model fails or language unsupported offline, gracefully inform
                 tvAudioStatus.setText("התמלול מוכן");
             }
 
@@ -736,11 +736,19 @@ public class NoteEditorActivity extends Activity {
             return;
         }
 
-        File file = new File(note.getAudioPath());
-        Intent shareIntent = new Intent(Intent.ACTION_SEND);
-        shareIntent.setType("audio/*");
-        shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
-        startActivity(Intent.createChooser(shareIntent, "שתף הקלטת קול"));
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().build());
+            }
+            File file = new File(note.getAudioPath());
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("audio/*");
+            shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
+            startActivity(Intent.createChooser(shareIntent, "שתף הקלטת קול"));
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this, "שגיאה בשיתוף הקובץ", Toast.LENGTH_SHORT).show();
+        }
     }
 
     // --- Save & Lifecycle ---
