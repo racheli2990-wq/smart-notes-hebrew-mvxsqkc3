@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">פתקים חכמים Pro</string>
+    <string name="edit_note">עריכת פתק</string>
+    <string name="new_note">פתק חדש</string>
+    <string name="search_hint">חיפוש בפתקים, תמלולים ותגיות…</string>
+    <string name="all_notes">הכל</string>
+    <string name="tag_work">עבודה</string>
+    <string name="tag_personal">אישי</string>
+    <string name="tag_ideas">רעיונות</string>
+    <string name="tag_recordings">הקלטות</string>
+    <string name="no_notes_title">אין פתקים עדיין</string>
+    <string name="no_notes_desc">לחצו על הפלוס או המיקרופון כדי להתחיל פתק חכם עם תמלול ותמונות</string>
+    <string name="title_hint">כותרת הפתק…</string>
+    <string name="content_hint">התחילו לכתוב כאן או השתמשו בתמלול קולי…</string>
+    <string name="audio_recording">הקלטת קול ותמלול</string>
+    <string name="recording_in_progress">מקליט… מדברים עכשיו</string>
+    <string name="stop_recording">סיום הקלטה</string>
+    <string name="start_recording">הקלטה חדשה</string>
+    <string name="play_audio">נגן הקלטה</string>
+    <string name="pause_audio">השהה</string>
+    <string name="transcribe_now">תמלל הקלטה עכשיו</string>
+    <string name="transcribing">מתמלל בדיבור מקומי…</string>
+    <string name="transcription_title">תמלול אוטומטי (Offline/מקומי):</string>
+    <string name="add_image">הוסף תמונה</string>
+    <string name="add_todo">הוסף משימה (To-Do)</string>
+    <string name="new_todo_hint">משימה חדשה…</string>
+    <string name="settings">הגדרות</string>
+    <string name="view_mode">תצוגת מסך הבית</string>
+    <string name="view_grid">כרטיסי גריד מודרניים</string>
+    <string name="view_list">רשימה נקייה</string>
+    <string name="speech_lang">שפת תמלול בדיבור</string>
+    <string name="lang_he">עברית (ישראל)</string>
+    <string name="lang_en">אנגלית (English)</string>
+    <string name="transcribe_mode">אופן תמלול</string>
+    <string name="transcribe_realtime">בזמן אמת תוך כדי דיבור</string>
+    <string name="transcribe_on_finish">בסיום ההקלטה</string>
+    <string name="save">שמור</string>
+    <string name="delete">מחק</string>
+    <string name="share">שתף</string>
+    <string name="share_text">שיתוף תוכן ותמלול</string>
+    <string name="share_audio">שיתוף קובץ הקול</string>
+    <string name="confirm_delete">האם למחוק פתק זה לצמיתות?</string>
+    <string name="yes">כן, מחק</string>
+    <string name="cancel">ביטול</string>
+    <string name="permission_mic_needed">יש צורך בהרשאת מיקרופון להקלטת קול ותמלול</string>
+</resources>

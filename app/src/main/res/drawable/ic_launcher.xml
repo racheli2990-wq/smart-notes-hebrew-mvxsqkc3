@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Rounded Background in Deep Modern Indigo -->
+    <path
+        android:fillColor="#4F46E5"
+        android:pathData="M20,6 C10,6 6,10 6,20 L6,76 C6,86 10,90 20,90 L76,90 C86,90 90,86 90,76 L90,20 C90,10 86,6 76,6 Z" />
+
+    <!-- Notepad Sheet Base -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M26,22 L56,22 L70,36 L70,74 C70,77.3 67.3,80 64,80 L26,80 C22.7,80 20,77.3 20,74 L20,28 C20,24.7 22.7,22 26,22 Z" />
+
+    <!-- Notepad Fold Corner -->
+    <path
+        android:fillColor="#C7D2FE"
+        android:pathData="M56,22 L70,36 L56,36 Z" />
+
+    <!-- Note Text Lines -->
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M28,40 L50,40 C51.1,40 52,40.9 52,42 C52,43.1 51.1,44 50,44 L28,44 C26.9,44 26,43.1 26,42 C26,40.9 26.9,40 28,40 Z" />
+
+    <path
+        android:fillColor="#A5B4FC"
+        android:pathData="M28,50 L62,50 C63.1,50 64,50.9 64,52 C64,53.1 63.1,54 62,54 L28,54 C26.9,54 26,53.1 26,52 C26,50.9 26.9,50 28,50 Z" />
+
+    <!-- Mic / Audio Wave Accent -->
+    <path
+        android:fillColor="#EC4899"
+        android:pathData="M48,60 C50.2,60 52,61.8 52,64 L52,70 C52,72.2 50.2,74 48,74 C45.8,74 44,72.2 44,70 L44,64 C44,61.8 45.8,60 48,60 Z" />
+
+    <path
+        android:fillColor="#EC4899"
+        android:pathData="M41,68 C41,71.9 44.1,75 48,75 C51.9,75 55,71.9 55,68 L57,68 C57,72.6 53.4,76.4 49,76.9 L49,80 L47,80 L47,76.9 C42.6,76.4 39,72.6 39,68 Z" />
+</vector>
